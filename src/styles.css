@@ -1,0 +1,112 @@
+.base {
+  font-family: cursive;
+  text-align: center;
+}
+.heading {
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.img {
+  height: 300px;
+  width: 300px;
+}
+.box {
+  margin: auto;
+}
+.box h1 {
+  font-size: 1rem;
+}
+.outer-box {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  margin: 10%;
+  overflow: hidden;
+}
+.input {
+  height: 30px;
+  width: 390px;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+::placeholder {
+  padding: 10px;
+  font-family: cursive;
+  font-weight: 500;
+}
+input[value] {
+  font-family: cursive;
+  font-weight: 300;
+}
+.button {
+  font-family: cursive;
+  height: 30px;
+  width: 60px;
+  border-radius: 5px;
+  background-color: white;
+  border-radius: 2px solid black;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.span {
+  margin: 15px;
+  padding: 10px;
+}
+.button:hover {
+  transform: scale(1.15);
+  transition: all 0.4s ease-out;
+  background-color: black;
+  color: white;
+}
+@media (max-width: 1000px) {
+  .heading {
+    font-size: 25px;
+  }
+  .span {
+    margin: 5px;
+    padding: 5px;
+  }
+  .input {
+    height: 30px;
+    width: 250px;
+  }
+  .button {
+    height: 30px;
+    width: 50px;
+    font-size: 12px;
+  }
+  .img {
+    width: 120px;
+    height: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .heading {
+    font-size: 20px;
+  }
+  .button {
+    margin: auto;
+    display: block;
+  }
+  .span {
+    display: block;
+    margin: 2px;
+    padding: 2px;
+  }
+  .input {
+    height: 20px;
+    width: 150px;
+  }
+  .img {
+    width: 100%;
+  }
+  .box h1 {
+    font-size: 0.75rem;
+  }
+  .box p {
+    font-size: 0.5rem;
+  }
+  .outer-box {
+    flex-direction: column;
+  }
+}
